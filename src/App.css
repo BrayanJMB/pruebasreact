@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.radio{
+  cursor: pointer;
+  width: 20px;
+  height: 40px;
+  color: #1A1A37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.filaradios{
+  width: 100%;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.seccionpregunta{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap:4px;
+  width:fit-content;
+  border-right: 1px solid #9C9CB8;
+}
+
+.flexrow{
+  display:flex;
+  flex-direction: row;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexcolum{
+  display:flex;
+  flex-direction:column;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.filasseccion{
+  display:flex;
+  flex-direction:column;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.titulo1{
+  font-size: 18px;
+  margin: 4px 4px 4px 4px;
+}
+.texto{
+  margin: 2px 2px 2px 2px;
+  font-size: 10px;
+  width: 70px;
+  text-align: center;
+}
+.altotitulos{
+  height: 30px;
+}
+.altotextos{
+  height: 60px;
+}
+.campotexto{
+  display: inline;
+  border: 1px solid #9C9CB8;
+  outline: 0px;
+  height: 25px;
+  width: 200px;
+  color: #9C9CB8;
+  background: none;
+  font-size: 15px;
+  margin: 7px 10px 7px 10px;
+}
+.encabnom{
+  height: 80px;
+}
+.App-header{
+  background: #F7B207;
+  height: 70px;
+  margin: 0px 0px 0px 0px;
+}
+body{
+  background: #F0ECE3;
+}
+.encabezado{
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.tituloencabezado{
   color: white;
+  grid-column: 1;
+  text-align: center;
+  margin: 4px 4px 4px 4px;
+}
+.logoencabezado{
+  grid-column: 2;
+  height: 60px;
+  margin: 4px 4px 4px 4px;
+
+}
+.tarjeta{
+  margin: 30px 30px 30px 30px;
+  background: white;
+  padding: 30px 30px 30px 30px;
+}
+.agregar{
+  color: #6D337C;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.controles{
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  width: 100%;
 }
